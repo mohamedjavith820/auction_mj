@@ -1,0 +1,393 @@
+/* General reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Auction Page container */
+.auction-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+h1 {
+  font-size: 2rem;
+  color: #1e88e5;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: #1e88e5;
+  margin-top: 20px;
+}
+
+/* Player info section */
+.player-info {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #e3f2fd;
+  width: 100%;
+  max-width: 350px;
+}
+
+.player-info p {
+  margin-top: 5px;
+}
+
+/* Bid section */
+.bid-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 350px;
+  gap: 10px;
+}
+
+input[type="number"] {
+  width: 70px;
+  padding: 8px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 200px;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #d6d6d6;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Action buttons grouping */
+.button-group {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.next-player-section {
+  margin-top: 20px;
+}
+
+.teams {
+  margin-top: 20px;
+  text-align: left;
+  width: 100%;
+  max-width: 350px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f1f8e9;
+}
+
+.teams p {
+  font-size: 1rem;
+  color: #333;
+  padding: 5px 0;
+}
+
+/* Ensure the layout is mobile-first */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .bid-section {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  input[type="number"] {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .teams {
+    text-align: center;
+  }
+
+  .player-info p {
+    font-size: 1rem;
+  }
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 10px;
+}
+
+/* Page Header */
+h1 {
+  font-size: 1.8rem;
+  color: #007BFF;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+input[type="text"],
+select {
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 90%;
+}
+
+button:disabled {
+  background-color: #6c757d;
+}
+
+button:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+/* Player Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+thead {
+  background-color: #007BFF;
+  color: white;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  font-size: 1rem;
+}
+
+/* Player Count and Auction Button */
+p {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input[type="text"],
+  select,
+  button {
+    font-size: 1rem;
+  }
+
+  th, td {
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 12px;
+  }
+}
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #0078D7, #004AAD);
+  color: #fff;
+}
+
+.auction-page {
+  padding: 15px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 24px;
+  color: #FFD700;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 20px;
+  color: #FFC107;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.auction-container {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #FFD700;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.bid-section {
+  margin: 10px 0;
+}
+
+label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+input[type='number'] {
+  padding: 8px;
+  width: 80px;
+  border: 1px solid #FFD700;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.button-group button, .next-player-section button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FFD700;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.button-group button:disabled {
+  background-color: #aaa;
+  color: #666;
+}
+
+.team-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.team-details li {
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #FFD700;
+  color: #000;
+}
+
+.team-details h3 {
+  margin-top: 15px;
+  color: #FFC107;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .button-group button, .next-player-section button {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+  input[type='number'] {
+    width: 60px;
+    padding: 6px;
+  }
+}
+

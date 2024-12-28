@@ -1,0 +1,31 @@
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+.players-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.players-list li {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.players-list li:hover {
+  background-color: #f4f4f4;
+}
+
+.bidding-section {
+  margin-top: 20px;
+}
+
+.bidding-section input {
+  margin: 10px;
+  padding: 5px;
+}
